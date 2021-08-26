@@ -63,10 +63,10 @@ async function getDailyReportFormData(
         city = geo.addressComponent.city;
     }
     
-    area = geo.addressComponent.province + " "
+    var area = geo.addressComponent.province + " "
         + geo.addressComponent.city + " "
         + geo.addressComponent.district;
-    address = geo.formattedAddress;
+    var address = geo.formattedAddress;
     address = "北京市海淀区北京邮电大学";
     area = "北京市"+"  "+"海淀区";
     console.log(address);
