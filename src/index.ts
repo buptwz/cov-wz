@@ -62,11 +62,13 @@ async function getDailyReportFormData(
     } else {
         city = geo.addressComponent.city;
     }
+    
     const area = geo.addressComponent.province + " "
         + geo.addressComponent.city + " "
         + geo.addressComponent.district;
     const address = geo.formattedAddress;
-
+    console.log(address);
+    console.log(area);
     Object.assign(oldForm, newForm);
 
     delete oldForm.jrdqtlqk;
