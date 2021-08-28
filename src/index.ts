@@ -63,12 +63,12 @@ async function getDailyReportFormData(
         city = geo.addressComponent.city;
     }
     
-    var area = geo.addressComponent.province + " "
+    const var area = geo.addressComponent.province + " "
         + geo.addressComponent.city + " "
         + geo.addressComponent.district;
-    var address = geo.formattedAddress;
-    address = "北京市海淀区北京邮电大学";
-    area = "北京市"+"  "+"海淀区";
+    const var address = geo.formattedAddress;
+//     address = "北京市海淀区北京邮电大学";
+//     area = "北京市"+"  "+"海淀区";
     console.log(address);
     console.log(area);
     Object.assign(oldForm, newForm);
